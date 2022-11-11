@@ -7,10 +7,10 @@ import lt.testas.userlist.navigation.AppNavigator
 import javax.inject.Inject
 
 @HiltViewModel
-class DetailViewModel @Inject constructor(
+class UserListViewModel @Inject constructor(
     private val savedStateHandle: SavedStateHandle,
     private val appNavigator: AppNavigator,
-) : BaseViewModel<DetailViewModel.State>(State()) {
+) : BaseViewModel<UserListViewModel.State>(State()) {
 
     data class State(
         val placeHolder: String = ""

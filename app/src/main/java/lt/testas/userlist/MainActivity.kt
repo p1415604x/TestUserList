@@ -22,8 +22,8 @@ import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.coroutines.Dispatchers
 import lt.testas.userlist.navigation.AppNavigator
 import lt.testas.userlist.navigation.Screen
-import lt.testas.userlist.screen.detail.DetailScreen
-import lt.testas.userlist.screen.detail.DetailViewModel
+import lt.testas.userlist.screen.detail.UserListScreen
+import lt.testas.userlist.screen.detail.UserListViewModel
 import lt.testas.userlist.screen.login.LoginScreen
 import lt.testas.userlist.screen.login.LoginViewModel
 import lt.testas.userlist.theme.theme.TestUserListTheme
@@ -67,12 +67,12 @@ private fun TestApp(navController: NavHostController) {
         composable(Screen.Login.route) {
             val viewModel: LoginViewModel = hiltViewModel()
             val state by viewModel.stateFlow.collectAsState(Dispatchers.Main.immediate)
-            LoginScreen()
+            LoginScreen(state, viewModel::login, viewModel::userTyped)
         }
         composable(Screen.Detail.route) {
-            val viewModel: DetailViewModel = hiltViewModel()
+            val viewModel: UserListViewModel = hiltViewModel()
             val state by viewModel.stateFlow.collectAsState(Dispatchers.Main.immediate)
-            DetailScreen()
+            UserListScreen()
         }
     }
 }

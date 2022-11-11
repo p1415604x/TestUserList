@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">TestUserList</string>
+    <string name="login_title">Login</string>
+    <string name="login_button">Login</string>
+    <string name="login_email_pl">Email</string>
+    <string name="login_password_pl">Password</string>
+    <string name="login_email_error">Your email seems to be incorrect</string>
+    <string name="login_password_error">Password must be at least 6 characters long</string>
 </resources>
