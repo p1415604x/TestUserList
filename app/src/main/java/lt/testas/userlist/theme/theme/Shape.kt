@@ -1,4 +1,4 @@
-package lt.testas.userlist.ui.theme
+package lt.testas.userlist.theme.theme
 
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.Shapes
