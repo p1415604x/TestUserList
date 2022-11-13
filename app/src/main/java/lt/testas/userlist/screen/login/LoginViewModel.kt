@@ -7,7 +7,7 @@ import kotlinx.coroutines.launch
 import lt.testas.userlist.base.BaseViewModel
 import lt.testas.userlist.navigation.AppNavigator
 import lt.testas.userlist.navigation.Screen
-import lt.testas.util.Validator
+import lt.testas.userlist.util.Validator
 import javax.inject.Inject
 
 @HiltViewModel

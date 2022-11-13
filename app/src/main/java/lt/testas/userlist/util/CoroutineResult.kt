@@ -1,4 +1,4 @@
-package lt.testas.util
+package lt.testas.userlist.util
 
 import kotlinx.coroutines.CancellationException
 import kotlinx.coroutines.TimeoutCancellationException

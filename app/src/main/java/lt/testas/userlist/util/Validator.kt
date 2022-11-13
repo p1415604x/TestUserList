@@ -1,4 +1,4 @@
-package lt.testas.util
+package lt.testas.userlist.util
 
 object Validator {
     val lengthRegex = Regex("(.{6,})")

@@ -9,7 +9,7 @@ import kotlinx.coroutines.launch
 import lt.testas.userlist.base.BaseViewModel
 import lt.testas.userlist.network.dto.UserDto
 import lt.testas.userlist.usecase.GetUsersUseCase
-import lt.testas.util.runCatchingCoroutine
+import lt.testas.userlist.util.runCatchingCoroutine
 import javax.inject.Inject
 
 @HiltViewModel
