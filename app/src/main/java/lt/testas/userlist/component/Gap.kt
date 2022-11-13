@@ -1,8 +1,6 @@
 package lt.testas.userlist.component
 
-import androidx.compose.foundation.layout.ColumnScope
-import androidx.compose.foundation.layout.Spacer
-import androidx.compose.foundation.layout.height
+import androidx.compose.foundation.layout.*
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.NonRestartableComposable
 import androidx.compose.ui.Modifier
@@ -26,3 +24,22 @@ fun ColumnScope.GapWeight(weight: Float = 1f) {
 fun ColumnScope.GapHalf() {
     Gap(TestUserTheme.dimen.elementGap / 2)
 }
+
+@Composable
+@NonRestartableComposable
+fun RowScope.Gap(height: Dp = TestUserTheme.dimen.elementGap) {
+    Spacer(modifier = Modifier.width(height))
+}
+
+@Composable
+@NonRestartableComposable
+fun RowScope.GapWeight(weight: Float = 1f) {
+    Spacer(modifier = Modifier.weight(weight))
+}
+
+@Composable
+@NonRestartableComposable
+fun RowScope.GapHalf() {
+    Gap(TestUserTheme.dimen.elementGap / 2)
+}
+

@@ -6,4 +6,6 @@
     <string name="login_password_pl">Password</string>
     <string name="login_email_error">Your email seems to be incorrect</string>
     <string name="login_password_error">Password must be at least 6 characters long</string>
+    <string name="user_list_title">Search</string>
+    <string name="user_image_description">User Avatar</string>
 </resources>

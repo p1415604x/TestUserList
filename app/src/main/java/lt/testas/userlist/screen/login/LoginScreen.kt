@@ -13,6 +13,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.focus.FocusRequester
 import androidx.compose.ui.focus.focusRequester
 import androidx.compose.ui.res.stringResource
+import androidx.compose.ui.text.input.PasswordVisualTransformation
 import androidx.compose.ui.tooling.preview.Preview
 import lt.testas.userlist.R
 import lt.testas.userlist.component.AppButton
@@ -31,6 +32,7 @@ fun LoginScreen(
     Column(
         modifier = Modifier
             .fillMaxSize()
+            .statusBarsPadding()
             .padding(horizontal = TestUserTheme.dimen.screenHorizontalPadding),
         horizontalAlignment = Alignment.CenterHorizontally,
         verticalArrangement = Arrangement.Center
@@ -78,6 +80,7 @@ fun LoginScreen(
             isError = state.showPasswordError,
             errorMessage = stringResource(id = R.string.login_password_error),
             singleLine = true,
+            visualTransformation = PasswordVisualTransformation()
         )
         Gap()
         AppButton(

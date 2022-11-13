@@ -46,6 +46,7 @@ private val LightColorPalette = lightColors(
 @Immutable
 data class Dimensions(
     val screenHorizontalPadding: Dp = 24.dp,
+    val screenVerticalPadding: Dp = 40.dp,
     val elementGap: Dp = 20.dp
 )
 

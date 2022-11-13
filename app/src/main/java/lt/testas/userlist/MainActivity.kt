@@ -72,7 +72,7 @@ private fun TestApp(navController: NavHostController) {
         composable(Screen.Detail.route) {
             val viewModel: UserListViewModel = hiltViewModel()
             val state by viewModel.stateFlow.collectAsState(Dispatchers.Main.immediate)
-            UserListScreen()
+            UserListScreen(state, viewModel::filterUsers)
         }
     }
 }
